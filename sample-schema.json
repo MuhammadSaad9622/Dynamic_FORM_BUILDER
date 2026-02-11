@@ -1,0 +1,192 @@
+{
+  "id": "sample-contact-form",
+  "name": "Sample Contact Form",
+  "description": "A comprehensive contact form demonstrating all field types",
+  "version": 1,
+  "fields": [
+    {
+      "id": "field-1",
+      "type": "text",
+      "label": "Full Name",
+      "name": "fullName",
+      "placeholder": "Enter your full name",
+      "required": true,
+      "columnSpan": 2,
+      "validationRules": [
+        {
+          "type": "required",
+          "message": "Full name is required"
+        },
+        {
+          "type": "minLength",
+          "value": 2,
+          "message": "Name must be at least 2 characters"
+        },
+        {
+          "type": "maxLength",
+          "value": 100,
+          "message": "Name must be less than 100 characters"
+        }
+      ]
+    },
+    {
+      "id": "field-2",
+      "type": "email",
+      "label": "Email Address",
+      "name": "email",
+      "placeholder": "Enter your email address",
+      "required": true,
+      "columnSpan": 2,
+      "validationRules": [
+        {
+          "type": "required",
+          "message": "Email is required"
+        },
+        {
+          "type": "pattern",
+          "value": "^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$",
+          "message": "Please enter a valid email address"
+        }
+      ]
+    },
+    {
+      "id": "field-3",
+      "type": "text",
+      "label": "Phone Number",
+      "name": "phone",
+      "placeholder": "Enter your phone number",
+      "required": false,
+      "columnSpan": 2,
+      "validationRules": [
+        {
+          "type": "pattern",
+          "value": "^[\\d\\s\\-\\(\\)]+$",
+          "message": "Please enter a valid phone number"
+        }
+      ]
+    },
+    {
+      "id": "field-4",
+      "type": "date",
+      "label": "Date of Birth",
+      "name": "dateOfBirth",
+      "required": false,
+      "columnSpan": 2
+    },
+    {
+      "id": "field-5",
+      "type": "dropdown",
+      "label": "Country",
+      "name": "country",
+      "required": true,
+      "columnSpan": 2,
+      "options": [
+        {
+          "label": "United States",
+          "value": "us"
+        },
+        {
+          "label": "Canada",
+          "value": "ca"
+        },
+        {
+          "label": "United Kingdom",
+          "value": "uk"
+        },
+        {
+          "label": "Australia",
+          "value": "au"
+        },
+        {
+          "label": "Germany",
+          "value": "de"
+        }
+      ],
+      "validationRules": [
+        {
+          "type": "required",
+          "message": "Please select a country"
+        }
+      ]
+    },
+    {
+      "id": "field-6",
+      "type": "radio",
+      "label": "Preferred Contact Method",
+      "name": "contactMethod",
+      "required": true,
+      "columnSpan": 2,
+      "options": [
+        {
+          "label": "Email",
+          "value": "email"
+        },
+        {
+          "label": "Phone",
+          "value": "phone"
+        },
+        {
+          "label": "SMS",
+          "value": "sms"
+        }
+      ],
+      "validationRules": [
+        {
+          "type": "required",
+          "message": "Please select a contact method"
+        }
+      ]
+    },
+    {
+      "id": "field-7",
+      "type": "textarea",
+      "label": "Message",
+      "name": "message",
+      "placeholder": "Enter your message here...",
+      "required": false,
+      "columnSpan": 4,
+      "validationRules": [
+        {
+          "type": "maxLength",
+          "value": 500,
+          "message": "Message must be less than 500 characters"
+        }
+      ]
+    },
+    {
+      "id": "field-8",
+      "type": "checkbox",
+      "label": "I agree to the terms and conditions",
+      "name": "agreeToTerms",
+      "required": true,
+      "columnSpan": 2,
+      "validationRules": [
+        {
+          "type": "required",
+          "message": "You must agree to the terms and conditions"
+        }
+      ]
+    },
+    {
+      "id": "field-9",
+      "type": "toggle",
+      "label": "Subscribe to newsletter",
+      "name": "newsletter",
+      "required": false,
+      "columnSpan": 2,
+      "defaultValue": false
+    },
+    {
+      "id": "field-10",
+      "type": "datetime",
+      "label": "Preferred Contact Time",
+      "name": "preferredTime",
+      "required": false,
+      "columnSpan": 2
+    }
+  ],
+  "sections": [],
+  "groups": [],
+  "createdAt": "2024-01-01T00:00:00.000Z",
+  "updatedAt": "2024-01-01T00:00:00.000Z"
+}
