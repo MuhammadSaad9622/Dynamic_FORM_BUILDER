@@ -464,7 +464,7 @@ export default function FormCreator({ formId }: FormCreatorProps) {
                       No fields added yet
                     </Typography>
                     <Typography variant="body2" color="text.secondary" sx={{ mb: 3 }}>
-                      Click "Add Field" to start building your form
+                      Click &quot;Add Field&quot; to start building your form
                     </Typography>
                     <Button
                       variant="contained"
