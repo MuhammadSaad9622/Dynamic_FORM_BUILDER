@@ -299,9 +299,9 @@ export default function FormCreator({ formId }: FormCreatorProps) {
                   variant="contained" 
                   startIcon={<Add />} 
                   onClick={handleAddField}
-                  fullWidth={{ xs: true, sm: false }}
                   size="medium"
                   sx={{
+                    width: { xs: '100%', sm: 'auto' },
                     background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
                     '&:hover': {
                       background: 'linear-gradient(135deg, #5568d3 0%, #6a3f8f 100%)',

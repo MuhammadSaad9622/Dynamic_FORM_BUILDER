@@ -450,8 +450,8 @@ export default function FormRenderer({
                 startIcon={<Clear />}
                 onClick={handleClear}
                 disabled={isSubmitting}
-                fullWidth={{ xs: true, sm: false }}
                 sx={{ 
+                  width: { xs: '100%', sm: 'auto' },
                   order: { xs: 3, sm: 1 },
                   py: { xs: 1.25, sm: 1 }
                 }}
@@ -463,8 +463,8 @@ export default function FormRenderer({
                 startIcon={<Save />}
                 onClick={handleSaveDraft}
                 disabled={isSubmitting}
-                fullWidth={{ xs: true, sm: false }}
                 sx={{ 
+                  width: { xs: '100%', sm: 'auto' },
                   order: { xs: 2, sm: 2 },
                   py: { xs: 1.25, sm: 1 }
                 }}
@@ -476,8 +476,8 @@ export default function FormRenderer({
                 startIcon={isSubmitting ? <CircularProgress size={20} color="inherit" /> : <Send />}
                 onClick={handleSubmit}
                 disabled={isSubmitting}
-                fullWidth={{ xs: true, sm: false }}
                 sx={{ 
+                  width: { xs: '100%', sm: 'auto' },
                   order: { xs: 1, sm: 3 },
                   py: { xs: 1.5, sm: 1 },
                   fontSize: { xs: '1rem', sm: '0.875rem' }

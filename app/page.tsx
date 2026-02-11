@@ -137,8 +137,8 @@ export default function Home() {
                 startIcon={<Add />}
                 onClick={handleCreateForm}
                 size="large"
-                fullWidth={{ xs: true, sm: false }}
                 sx={{ 
+                  width: { xs: '100%', sm: 'auto' },
                   maxWidth: { xs: '100%', sm: 'none' },
                   background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
                   '&:hover': {
