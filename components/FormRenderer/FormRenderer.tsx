@@ -201,13 +201,13 @@ export default function FormRenderer({
     const value = formData[field.name] ?? '';
     const error = errors[field.name];
     const isTouched = touched[field.name];
-    const showError = isTouched && error;
+    const showError = isTouched && !!error;
 
     const commonProps = {
       fullWidth: true,
       label: field.label,
       required: field.required,
-      error: showError,
+      error: showError as boolean,
       helperText: showError ? error : '',
       disabled: readOnly,
       onBlur: () => handleBlur(field),
